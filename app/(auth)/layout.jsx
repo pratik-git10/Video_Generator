@@ -1,13 +1,13 @@
 import React from "react";
 
-const layout = ({ children }) => {
+const AuthLayout = ({ children }) => {
   return (
     <div>
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="bg-[#18181b] flex items-center justify-center min-h-screen">
         {children}
       </div>
     </div>
   );
 };
 
-export default layout;
+export default AuthLayout;

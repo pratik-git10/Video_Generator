@@ -23,7 +23,7 @@ const SelectTopics = ({ onUserSelect }) => {
   return (
     <div>
       <h2 className="text-2xl font-semibold">Content</h2>
-      <p className="text-gray-500">What is the topic of your video? </p>
+      <p className="text-gray-500">What is the topic of your video ? </p>
 
       <Select
         onValueChange={(value) => {

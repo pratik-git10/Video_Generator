@@ -1,13 +1,14 @@
-import { UserButton } from "@clerk/nextjs";
+"use client";
+
 import {
   FileVideo,
   PanelsTopLeftIcon,
-  SeparatorHorizontalIcon,
   ShieldPlus,
   UserCircle,
 } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 
 const Sidebar = () => {
   const links = [
@@ -37,12 +38,17 @@ const Sidebar = () => {
     },
   ];
 
+  const path = usePathname();
+
   return (
     <div className="w-64 h-screen shadow-md p-5 flex flex-col justify-between">
       <div className="grid gap-2">
         {links.map((link, index) => (
           <Link href={link.pathname} key={index}>
-            <div className="flex items-center p-3 gap-3 hover:bg-primary hover:text-white rounded-md transition transform ease-in-out duration-200">
+            <div
+              className={`flex items-center p-3 gap-3 hover:bg-primary hover:text-white rounded-md transition transform ease-in-out duration-200 ${
+                path == link.pathname && "bg-primary text-white"
+              }`}>
               <link.icon />
               <h1>{link.name}</h1>
             </div>

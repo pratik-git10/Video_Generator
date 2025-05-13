@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 const outfit = Outfit({ subsets: ["latin"] });
+
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>

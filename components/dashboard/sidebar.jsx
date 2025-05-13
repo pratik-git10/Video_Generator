@@ -21,7 +21,7 @@ const Sidebar = () => {
     {
       id: 2,
       name: "Create New",
-      pathname: "/create-new",
+      pathname: "/dashboard/create-new",
       icon: FileVideo,
     },
     {

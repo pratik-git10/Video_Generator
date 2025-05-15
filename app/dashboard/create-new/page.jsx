@@ -24,6 +24,7 @@ const CreateNew = () => {
   const GetVideoScript = async () => {
     const prompt = `Write a script to generate ${formData.duration} video on topic: ${formData.topic} along with AI image prompt in ${formData.imagestyle} format for each scene and give me result in JSON format with imagePrompt and ContentText as field, No plain Text`;
     console.log(prompt);
+
     const result = await axios
       .post("/api/get-video-script", {
         prompt: prompt,

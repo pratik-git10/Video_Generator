@@ -7,7 +7,7 @@ const config = {
   responseMimeType: "application/json",
 };
 
-const model = "gemini-1.5-pro";
+const model = "gemini-2.0-flash";
 
 export const chatSession = model.startChat({
   config,
@@ -62,7 +62,6 @@ export const chatSession = model.startChat({
   }
 ]
 \`\`\`
-
 
 This JSON structure makes it straightforward to parse and use in a video creation tool.  Each scene object includes the text to be narrated, the duration it should appear on screen, and the AI image generation prompt for that scene.  The prompts are detailed enough to guide the AI towards creating realistic and historically-informed images.  You can adjust the duration and text to fine-tune your video.  Remember to cite your sources for historical information when creating your final video.
 `,

@@ -1,4 +1,5 @@
 import Header from "@/components/dashboard/header";
+import { Footer } from "@/components/footer";
 import { TestimonialsCarousel } from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -77,6 +78,9 @@ export default function HomePage() {
         <Button size="lg" className="text-lg px-6 py-4">
           Get Started Free <ArrowRight className="ml-2" />
         </Button>
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   );

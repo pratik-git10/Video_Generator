@@ -1,11 +1,14 @@
+import Header from "@/components/dashboard/header";
+import { TestimonialsCarousel } from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      <Header />
       {/* Hero Section */}
-      <section className="py-24 px-6 text-center bg-gradient-to-br from-indigo-500 to-blue-600 text-white">
+      <section className="py-24 px-6 mt-6 text-center bg-gradient-to-br from-indigo-500 to-blue-600 text-white">
         <h1 className="text-5xl font-bold mb-4">
           Create Stunning Videos in Seconds with AI
         </h1>
@@ -60,6 +63,10 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+        <TestimonialsCarousel />
       </section>
 
       {/* Final CTA */}

@@ -79,6 +79,52 @@ export default function HomePage() {
           Get Started Free <ArrowRight className="ml-2" />
         </Button>
       </section>
+      <section className="py-20 px-6 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-10">What’s New</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            {
+              title: "Multi-Language Voiceovers",
+              desc: "Instantly generate voiceovers in 20+ languages with realistic accents.",
+              icon: "🌐",
+            },
+            {
+              title: "Auto-Resize for Platforms",
+              desc: "Export videos perfectly sized for TikTok, Instagram, YouTube & more.",
+              icon: "📱",
+            },
+            {
+              title: "AI Titles & Descriptions",
+              desc: "Generate clickable titles, hashtags, and YouTube-friendly descriptions.",
+              icon: "🧠",
+            },
+            {
+              title: "Version History",
+              desc: "Undo edits and restore older versions with one click.",
+              icon: "🕒",
+            },
+            {
+              title: "Collaboration Mode",
+              desc: "Share projects with teammates or clients and collect feedback.",
+              icon: "🤝",
+            },
+            {
+              title: "Drag-and-Drop Timeline",
+              desc: "Edit scenes and transitions visually without any timeline headaches.",
+              icon: "🎬",
+            },
+          ].map((f, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+              <div className="text-3xl mb-3">{f.icon}</div>
+              <h3 className="font-semibold text-lg mb-1">{f.title}</h3>
+              <p className="text-sm text-gray-600">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section>
         <Footer />
       </section>

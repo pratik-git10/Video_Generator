@@ -1,3 +1,4 @@
+import { AdvancedFeatures } from "@/components/advfeatures";
 import Header from "@/components/dashboard/header";
 import { Footer } from "@/components/footer";
 import { TestimonialsCarousel } from "@/components/testimonial";
@@ -123,6 +124,10 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+        <AdvancedFeatures />
       </section>
 
       <section>

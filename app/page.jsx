@@ -129,6 +129,9 @@ export default function HomePage() {
       <section>
         <AdvancedFeatures />
       </section>
+      <section>
+        <AdvancedFeatures />
+      </section>
 
       <section>
         <Footer />

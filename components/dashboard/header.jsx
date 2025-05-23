@@ -6,7 +6,7 @@ import { UserButton } from "@clerk/nextjs";
 
 const Header = () => {
   return (
-    <div className="mx-3 rounded-b-md flex justify-between items-center p-3 px-5 shadow-md">
+    <div className="mx-3 rounded-b-md flex backdrop-blur-lg justify-between items-center p-3 px-5 shadow-md sticky top-0">
       <Link href={"/dashboard"}>
         <div className="flex items-center">
           {/* <Link href={"/dashboard"} className=""> */}

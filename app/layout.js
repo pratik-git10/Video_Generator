@@ -2,6 +2,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Provider from "./provider";
 import { Outfit } from "next/font/google";
+import ClientWrapper from "./client-wrapper";
 
 export const metadata = {
   title: "VidoAI",
@@ -16,7 +17,9 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={outfit.className}>
-          <Provider>{children}</Provider>
+          <ClientWrapper>
+            <Provider>{children}</Provider>
+          </ClientWrapper>
         </body>
       </html>
     </ClerkProvider>
